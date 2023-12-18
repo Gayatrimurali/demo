@@ -1,0 +1,32 @@
+ [
+  {
+    "Name": "active-genai",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/active-genai/main/Labfiles/00-GettingStarted-V2.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/active-genai/main/Labfiles/01-Query-Documents.md",
+        "Order": 2 
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/active-genai/main/Labfiles/02-Vector%20Search.md",
+        "Order": 3 
+      },    
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/active-genai/main/Labfiles/03-Prompt%20Engineering.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/active-genai/main/Labfiles/04-Security%20and%20Monitoring.md",
+        "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/active-genai/main/Labfiles/05-Load%20Balancing%20AOAI%20using%20APIM.md",
+        "Order": 6
+      }
+    ]
+  }
+ ]
