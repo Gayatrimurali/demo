@@ -184,7 +184,127 @@ Vamos a utilizar este informe como referencia. Comenzaremos agregando el fondo d
 
 20. Cambie el tamaño del **objeto visual** y **colóquelo en el cuadro debajo del objeto visual Sales**.
 
-21. 
+### Tarea 6: Agregar un gráfico de líneas al informe 
+
+Creemos un gráfico de líneas para visualizar las ventas a lo largo del tiempo por empresa revendedora. 
+
+1. Seleccione el **espacio en blanco** en el lienzo para quitar el foco del objeto visual de tarjeta de varias filas. 
+
+2. En la **sección Visualizaciones**, seleccione **Gráfico de líneas**. 
+
+3. En la **sección Datos**, expanda la tabla **Date**. 
+
+4. Seleccione el campo **Year**. Tenga en cuenta que Year se suma de forma predeterminada y se agrega al eje Y. Rectifiquemos esto.
+
+### Tarea 7: Configurar la columna Year en la tabla Date 
+
+1. Navegue a la pestaña del explorador con la **vista del modelo del lakehouse**. 
+
+2. En el panel izquierdo del explorador, expanda **lhFAIAD -> Schemas -> dbo -> Tables -> Date**. 
+
+3. Seleccione la columna **Year**. 
+
+4. En el panel **Propiedades** de la derecha, expanda la sección **Avanzado**. 
+
+5. En el menú desplegable **Resumir por**, seleccione **Ninguno**.
+
+6. Vuelva a la pestaña del explorador con el **lienzo de Power BI**. 
+
+7. En el menú superior, seleccione **Actualizar**. Observe ahora que Year no es un campo de suma.  
+
+8. Con el **objeto visual Gráfico de líneas seleccionado**, **elimine la Sum of Year** del eje Y. 
+
+9. Seleccione el campo **Year** y se agregará al **eje X**. 
+
+10. Expanda la tabla **Sales** y seleccione la **medida Sales**.
+
+### Tarea 8: Configurar la columna Short_Month_Name en la tabla Date 
+
+1. Agreguemos Mes a este gráfico. Desde la tabla Date, arrastre el campo **Short_Month_Name** debajo de **Year** en el **eje X**. Observe que el objeto visual está ordenado por Sales. Ordenémoslo por Short_Month_Name. 
+
+2. Haga clic en los **puntos suspensivos (…)** en la esquina superior derecha del objeto visual. 
+
+3. Seleccione **Ordenar eje -> Year Short_Month_Name**. 
+
+4. Haga clic en los **puntos suspensivos (…)** en la esquina superior derecha del objeto visual. 
+
+5. Seleccione **Ordenar eje -> Orden ascendente**. 
+
+   >**Nota:** Los meses están ordenados alfabéticamente. Vamos a arreglarlo. 
+
+6. Navegue a la pestaña del explorador con la **vista del modelo del lakehouse**. 
+
+7. En el panel izquierdo del explorador, expanda **lhFAIAD -> Schemes -> dbo -> Tables -> Date**. 
+
+8. Seleccione la columna **Short_Month_Name**. 
+
+9. En el panel **Propiedades** de la derecha, expanda la sección **Avanzado**. 
+
+10. En el menú desplegable **Ordenar por columna** seleccione **Month**.
+
+11. Vuelva a la pestaña del explorador con el **lienzo de Power BI**. 
+
+12. En el menú superior, seleccione **Actualizar**. Observe que ahora los meses están ordenados correctamente.
+
+### Tarea 9: Aplicar formato al gráfico de líneas 
+
+Observe lo fácil que es actualizar el modelo semántico mientras se crean los informes. Esto proporciona una interacción fluida como Power BI Desktop. 
+
+1. Con el **objeto visual Gráfico de líneas seleccionado**, en la **sección Datos**, expanda la tabla **Reseller**. 
+
+2. Arrastre **Reseller -> Reseller Company** a la sección **Leyenda**.
+
+3. Con el **objeto visual Gráfico de líneas seleccionado**, en la sección **Visualizaciones**, seleccione **icono Formato visual -> General**. 
+
+4. Expanda la sección **Título**. 
+
+5. Establezca el texto **Título** en **Ventas a lo largo del tiempo**. 
+
+6. Expanda la sección **Efectos**. 
+
+7. Utilice el control deslizante **Fondo** para configurarlo en **Desactivado**.
+
+8. En la sección **Visualizaciones**, seleccione el **icono Formato de objeto visual -> Objeto visual**. 
+
+9. Expanda la sección **Eje X**. 
+
+10. Utilice el control deslizante Título para configurarlo en **Desactivado**. 
+
+11. Expanda la sección **Líneas**. 
+
+12. Expanda la sección **Colores**. 
+
+13. Establezca el color de **Wingtip Toys** en **#004753**. 
+
+14. Establezca el color de **Tailspin Toys** en **#F17925**. 
+
+15. Cambie el tamaño del **objeto visual** y muévalo al **cuadro superior derecho como se muestra en la captura de pantalla**. 
+
+16. Desplácese hacia la derecha en el objeto visual y **observe que tenemos datos hasta abril de 2023**.
+
+17. Guardemos el informe: desde el menú, seleccione **Archivo -> Guardar**. 
+
+18. Se abre el cuadro de diálogo Guardar el informe. Nombre el informe como **rpt_Sales_Report**  
+
+    >**Nota**: Estamos anteponiendo rpt al nombre del informe, que es la abreviatura de informe (en inglés). 
+
+19. Asegúrese de que el informe esté guardado en **<your workspace name>**. 
+
+20. Seleccione **Guardar**.
+
+Como se mencionó anteriormente, no crearemos todos los objetos visuales en esta práctica de laboratorio. Siéntase libre de crear más objetos visuales si lo desea.  
+
+### Tarea 10: Agregar nuevos datos para simular el modo Direct Lake 
+
+Normalmente, en el modo Import, una vez que se actualizan los datos en el origen, necesitamos actualizar el modelo de Power BI y después se actualizan los datos en el informe. Con el modo de Direct Query, una vez que los datos se actualizan en el origen, están disponibles en el informe de Power BI. Sin embargo, el modo de Direct Query suele ser lento. Para resolver este problema, Microsoft Fabric presenta el modo Direct Lake. Direct Lake es una ruta rápida para cargar los datos del lago directamente en el motor de Power BI listos para su análisis. Exploremos más. 
+
+En un escenario real, los datos se actualizan en el origen. Como estamos en un entorno de entrenamiento, lo simularemos mediante la conexión a un archivo Parquet con datos de mayo de 2023.  
+
+1. Navegue a la pestaña del explorador con la **vista del modelo del lakehouse**. 
+
+2. Seleccione **<your workspace name>** en el panel izquierdo. 
+
+3. Seleccione df_Sales_ADFS para que podamos editar el flujo de datos al agregar el nuevo archivo Parquet. 
 
 
 
