@@ -304,7 +304,66 @@ En un escenario real, los datos se actualizan en el origen. Como estamos en un e
 
 2. Seleccione **<your workspace name>** en el panel izquierdo. 
 
-3. Seleccione df_Sales_ADFS para que podamos editar el flujo de datos al agregar el nuevo archivo Parquet. 
+3. Seleccione **df_Sales_ADFS** para que podamos editar el flujo de datos al agregar el nuevo archivo Parquet.
 
+4. Si aún no lo ha abierto, abra **FAIAD.pbix**, que se encuentra en la carpeta **Report** en el **Escritorio** de su entorno de laboratorio.  
 
+5. En la cinta de opciones, seleccione **Inicio -> Transformar datos**. Se abre la ventana de Power Query. 
+
+6. En el panel izquierdo, en la carpeta **DirectLake**, seleccione la consulta **MayInvoice**. 
+
+7. **Haga clic derecho** y seleccione **Copiar**.
+
+8. Vuelva a la **pantalla del flujo de datos** en el explorador. 
+
+9. En el panel del flujo de datos, introduzca **Ctrl+V** (actualmente, hacer clic con el botón derecho en Pegar no es compatible). 
+
+Ahora eliminemos la referencia a ADLS Base Folder (2) y usemos ADLS Base Folder. 
+
+10. Seleccione consulta **MayInvoice**. 
+
+11. Desde el panel derecho, en **Pasos aplicados**, seleccione **Source**. 
+
+12. En la barra de fórmulas, cambie de **#"ADLS Base Folder (2)"** a **#"ADLS Base Folder"**. 
+
+13. Seleccione la **marca de verificación** al lado de la barra de fórmulas o pulse Enter.
+
+14. En el panel izquierdo, en la sección Consultas, **haga clic con el botón derecho en la consulta ADLS Base Folder (2)** y seleccione **Eliminar**. 
+
+15. Aparece el cuadro de diálogo Eliminar consulta. Seleccione **Eliminar** para confirmar.
+
+16. Ahora, agreguemos los datos de la factura de mayo a la tabla Invoice. Seleccione la consulta **Invoice** desde la sección Consultas. 
+
+17. En la cinta de opciones, seleccione **Inicio - Anexar** consultas. 
+
+18. Aparece el cuadro de diálogo Anexar consulta. Desde el menú desplegable **Tabla para anexar**, seleccione **MayInvoice**. 
+
+19. Seleccione **Aceptar**.
+
+20. Seleccione **Publicar** en la esquina inferior derecha para guardar y publicar las actualizaciones.
+
+    >**Nota**: Una vez publicado, el flujo de datos se actualizará. Esto puede tardar varios minutos. 
+
+21. Vuelva a la pestaña del explorador con el **lienzo de Power BI**. 
+
+22. En el menú superior, seleccione **Actualizar**. Observe ahora que en el gráfico de líneas hay datos para mayo de 2023. Además, observe que el dólar de ventas ha aumentado.
+
+A medida que cada flujo de datos que hemos creado en laboratorios anteriores se actualiza según lo programado, los datos se incorporan al lakehouse. El modelo de datos en el lakehouse y los informes se actualizan. No tenemos que actualizar el modelo de datos ni informar cuando se actualice cada uno de los flujos de datos. Esta es la ventaja de Direct Lake. 
+
+Revisemos los desafíos que se enumeran en el planteamiento del problema: 
+
+- **Debe actualizar su conjunto de datos al menos tres veces al día para adaptarse a los diferentes tiempos de actualización para los diferentes orígenes de datos**. 
+Resolvimos esto con Direct Lake. Cada flujo de datos individual se actualiza según su programación. No es necesario actualizar el conjunto de datos y el informe. 
+
+- **Sus actualizaciones tardan mucho tiempo, ya que necesita hacer una actualización completa cada vez para capturar cualquier actualización que haya ocurrido en los sistemas de origen.** 
+De nuevo, resolvimos esto con Direct Lake. Cada flujo de datos individual se actualiza según su programación. No es necesario actualizar el conjunto de datos y el informe, por lo que no tenemos que preocuparnos por la actualización completa.  
+
+- **Cualquier error en cualquiera de los orígenes de datos de los que extrae provocará que se interrumpa la actualización del conjunto de datos. Muchas veces, el archivo del empleado no se carga a tiempo, lo que provoca que se interrumpa la actualización del conjunto de datos**. 
+La canalización de datos ayuda a resolver este problema al brindar la capacidad de volver a intentar la actualización en caso de error y en diferentes intervalos. 
+
+- **Se necesita mucho tiempo para hacer cambios en su modelo de datos, ya que Power Query tarda mucho en actualizar sus versiones preliminares, dado el gran tamaño de los datos y las transformaciones complejas**.  
+Vimos que los flujos de datos son eficientes y es fácil hacer cambios en ellos. Normalmente, la versión preliminar en flujos de datos no tarda mucho en cargarse. 
+
+- **Necesita que un PO con Windows use Power BI Desktop aunque el estándar corporativo es Mac**. 
+Microsoft Fabric es una oferta SaaS. Lo único que necesitamos es un explorador para acceder al servicio. No tenemos que instalar ningún software en nuestros escritorios. 
 
