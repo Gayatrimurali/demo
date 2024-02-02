@@ -393,43 +393,43 @@ Fabric Analyst in a Day (FAIAD) le presenta algunas funciones clave disponibles 
 
 Estos son algunos recursos más que podrán ayudarle a seguir avanzando con Microsoft Fabric. 
 
-- Vea la publicación del blog para leer el anuncio de disponibilidad general de Microsoft Fabric completo. 
+- Vea la publicación del blog para leer el [anuncio de disponibilidad general de Microsoft Fabric](https://www.microsoft.com/en-us/microsoft-fabric/blog/2023/11/15/prepare-your-data-for-ai-innovation-with-microsoft-fabric-now-generally-available/) completo. 
 
-Explore Fabric a través de la Visita guiada 
+- Explore Fabric a través de la [Visita guiada](https://guidedtour.microsoft.com/en-us/guidedtour/microsoft-fabric/microsoft-fabric/1/1) 
 
-Regístrese en la prueba gratuita de Microsoft Fabric 
+- Regístrese en la [prueba gratuita de Microsoft Fabric](https://app.powerbi.com/home?experience=power-bi)
 
-Visite el sitio web de Microsoft Fabric 
+- Visite el [sitio web de Microsoft Fabric](https://www.microsoft.com/en-in/microsoft-fabric)
 
-Adquiera nuevas capacidades mediante la exploración de los módulos de aprendizaje de Fabric 
+- Adquiera nuevas capacidades mediante la exploración de los [módulos de aprendizaje de Fabric](https://learn.microsoft.com/en-us/training/browse/?products=fabric&resource_type=module) 
 
-Explore la documentación técnica de Fabric 
+- Explore la [documentación técnica de Fabric](https://learn.microsoft.com/en-us/fabric/) 
 
-Lea el libro electrónico gratuito sobre cómo empezar a usar Fabric 
+- Lea el [libro electrónico gratuito sobre cómo empezar a usar Fabric](https://info.microsoft.com/ww-landing-unlocking-transformative-data-value-with-microsoft-fabric.html)
 
-Únase a la comunidad de Fabric para publicar sus preguntas, compartir sus comentarios y aprender de otros. 
+- Únase a la [comunidad de Fabric](https://community.fabric.microsoft.com/) para publicar sus preguntas, compartir sus comentarios y aprender de otros.
 
 Obtenga más información en los blogs de anuncios de la experiencia Fabric: 
 
-Experiencia de Data Factory en el blog de Fabric  
+- [Experiencia de Data Factory en el blog de Fabric](https://blog.fabric.microsoft.com/en-us/blog/introducing-data-factory-in-microsoft-fabric/) 
 
-Experiencia de Synapse Data Engineering en el blog de Fabric  
+- [Experiencia de Synapse Data Engineering en el blog de Fabric](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-engineering-in-microsoft-fabric/)  
 
-Experiencia de Synapse Data Science en el blog de Fabric  
+- [Experiencia de Synapse Data Science en el blog de Fabric](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-science-in-microsoft-fabric/) 
 
-Experiencia de Synapse Data Warehousing en el blog de Fabric  
+- [Experiencia de Synapse Data Warehousing en el blog de Fabric](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-warehouse-in-microsoft-fabric/)  
 
-Experiencia de Synapse Real-Time Analytics en el blog de Fabric 
+- [Experiencia de Synapse Real-Time Analytics en el blog de Fabric](https://blog.fabric.microsoft.com/en-us/blog/sense-analyze-and-generate-insights-with-synapse-real-time-analytics-in-microsoft-fabric/)
 
-Blog de anuncios de Power BI 
+- [Blog de anuncios de Power BI](https://powerbi.microsoft.com/en-us/blog/empower-power-bi-users-with-microsoft-fabric-and-copilot/)
 
-Experiencia de Data Activator en el blog de Fabric  
+- [Experiencia de Data Activator en el blog de Fabric](https://blog.fabric.microsoft.com/en-us/blog/driving-actions-from-your-data-with-data-activator/)  
 
-Administración y gobernanza en el blog de Fabric 
+- [Administración y gobernanza en el blog de Fabric](https://blog.fabric.microsoft.com/en-us/blog/administration-security-and-governance-in-microsoft-fabric/) 
 
-OneLake en el blog de Fabric 
+- [OneLake en el blog de Fabric](https://blog.fabric.microsoft.com/en-us/blog/microsoft-onelake-in-fabric-the-onedrive-for-data/) 
 
-Blog de integración de Dataverse y Microsoft Fabric 
+- [Blog de integración de Dataverse y Microsoft Fabric](https://cloudblogs.microsoft.com/dynamics365/it/2023/05/24/new-dataverse-enhancements-and-ai-powered-productivity-with-microsoft-365-copilot/) 
 
 © 2023 Microsoft Corporation. Todos los derechos reservados. 
 
