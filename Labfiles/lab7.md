@@ -158,8 +158,33 @@ Vamos a utilizar este informe como referencia. Comenzaremos agregando el fondo d
 
 7. Aumente el **tamaño de fuente** a **14**. 
 
-8. Seleccione el menú desplegable Color. Se abre el cuadro de diálogo Paleta de colores. 
+8. Seleccione el **menú desplegable Color**. Se abre el cuadro de diálogo Paleta de colores. 
 
-Establezca el valor Hex en #004753. 
+9. Establezca el valor Hex en **#004753**.
+
+10. Expanda la sección **Tarjetas**. 
+
+11. Utilice el control deslizante **Barra de énfasis** para configurarlo en **Desactivado**.
+
+12. Seleccione **General** en el panel de Visualizaciones. 
+
+13. Expanda la **sección Efectos**. 
+
+14. Utilice el control deslizante **Fondo** para configurarlo en **Desactivado**. 
+
+15. Cambie el tamaño del **objeto visual** y muévalo al **cuadro izquierdo como se muestra en la captura de pantalla**.
+
+16. Vamos a agregar otro KPI. Seleccione la **Tarjeta de varias filas de Sales** que acabamos de crear. **Copie** el objeto visual mediante la selección de **Ctrl+C** desde tu teclado. 
+
+17. **Pegue** el objeto visual mediante la selección de **Ctrl+V** desde tu teclado. Observe que el objeto visual se pega en el lienzo. 
+
+18. Con el **nuevo objeto visual resaltado**, en la sección **Visualizaciones -> Crear objeto visual -> Campos**, elimine la medida **Sales**. 
+
+19. Desde la sección **Datos**, expanda la tabla **Sales** y seleccione la medida **Units**. 
+
+20. Cambie el tamaño del **objeto visual** y **colóquelo en el cuadro debajo del objeto visual Sales**.
+
+21. 
+
 
 
